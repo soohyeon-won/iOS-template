@@ -14,8 +14,8 @@ struct ProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView(store: Store(initialState: MainReducer.State()) {
-                MainReducer()
+            RootView(store: Store(initialState: RootFeature.State()) {
+                RootFeature()
             })
         }
     }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E69748102B7A351400C47E94 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697480F2B7A351400C47E94 /* Destination.swift */; };
+		E69748102B7A351400C47E94 /* DestinationCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697480F2B7A351400C47E94 /* DestinationCase.swift */; };
 		E69B473E2B57FD1700A8B7E6 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B473D2B57FD1700A8B7E6 /* SubView.swift */; };
 		E69B47402B57FD3300A8B7E6 /* SubReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B473F2B57FD3300A8B7E6 /* SubReducer.swift */; };
 		E69B47462B5D28B800A8B7E6 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B47452B5D28B800A8B7E6 /* UINavigationController+Extensions.swift */; };
@@ -42,7 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E697480F2B7A351400C47E94 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		E697480F2B7A351400C47E94 /* DestinationCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCase.swift; sourceTree = "<group>"; };
 		E69B473D2B57FD1700A8B7E6 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		E69B473F2B57FD3300A8B7E6 /* SubReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubReducer.swift; sourceTree = "<group>"; };
 		E69B47452B5D28B800A8B7E6 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		E697480E2B7A34FA00C47E94 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				E697480F2B7A351400C47E94 /* Destination.swift */,
+				E697480F2B7A351400C47E94 /* DestinationCase.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -365,7 +365,7 @@
 				E69C828F2B25CDF300586158 /* ProjectApp.swift in Sources */,
 				E69B47402B57FD3300A8B7E6 /* SubReducer.swift in Sources */,
 				E69B473E2B57FD1700A8B7E6 /* SubView.swift in Sources */,
-				E69748102B7A351400C47E94 /* Destination.swift in Sources */,
+				E69748102B7A351400C47E94 /* DestinationCase.swift in Sources */,
 				E69C82C92B305DE500586158 /* API.swift in Sources */,
 				E6ED90902B4EE2AA007A980A /* MainReducer.swift in Sources */,
 				E69B47462B5D28B800A8B7E6 /* UINavigationController+Extensions.swift in Sources */,

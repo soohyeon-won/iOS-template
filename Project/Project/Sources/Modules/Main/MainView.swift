@@ -11,7 +11,6 @@ import ComposableArchitecture
 
 struct MainView: View {
     
-    @StateObject var coordinator: Coordinator = .init(isRoot: true)
     let store: StoreOf<MainReducer>
     
     var body: some View {
@@ -30,17 +29,17 @@ struct MainView: View {
                     
                     Text("입력된 데이터: \(viewStore.description)")
                     
-                    coordinator.navigationLinkSection()
-                    
                     Button {
-                      coordinator.push(destination: .subView(store: store))
+                        viewStore.send(.tapBtn)
+                        
                     } label: {
-                      Image(systemName: "c.square.fill")
+                        Image(systemName: "c.square.fill")
                     }
                 }
                 .navigationBarBackButtonHidden(true)
                 .navigationBarHidden(true)
                 .navigationTitle("")
+                
             }
         }
     }
@@ -50,4 +49,42 @@ struct MainView: View {
     MainView(store: Store(initialState: MainReducer.State()) {
         MainReducer()
     })
+}
+
+struct RootView: View {
+    let store: StoreOf<RootFeature>
+
+  var body: some View {
+      let navigationStore = store.scope(
+            state: \.path,
+            action: { RootFeature.Action.path($0) }
+          )
+      
+    NavigationStackStore(navigationStore) {
+      // Root view of the navigation stack
+        MainView(store: Store(initialState: MainReducer.State()) {
+            MainReducer()
+        })
+        
+        Button {
+            store.send(.mainViewBtnTapped)
+        } label: {
+            Text("메인화면이동")
+        }
+
+
+    } destination: { state in
+        
+        switch state {
+        case .subView(let subViewState):
+            SubView(store: Store(initialState: subViewState) {
+                MainReducer()
+            })
+        case .mainView(let subViewState):
+            MainView(store: Store(initialState: subViewState) {
+                MainReducer()
+            })
+      }
+    }
+  }
 }
