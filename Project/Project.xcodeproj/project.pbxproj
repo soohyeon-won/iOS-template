@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E65B44B72CFA0838003FE03D /* PushSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65B44B62CFA0835003FE03D /* PushSystem.swift */; };
 		E69748102B7A351400C47E94 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697480F2B7A351400C47E94 /* Destination.swift */; };
 		E69B473E2B57FD1700A8B7E6 /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B473D2B57FD1700A8B7E6 /* SubView.swift */; };
 		E69B47402B57FD3300A8B7E6 /* SubReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B473F2B57FD3300A8B7E6 /* SubReducer.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E65B44B62CFA0835003FE03D /* PushSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSystem.swift; sourceTree = "<group>"; };
 		E697480F2B7A351400C47E94 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		E69B473D2B57FD1700A8B7E6 /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		E69B473F2B57FD3300A8B7E6 /* SubReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubReducer.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E65B44B52CFA082B003FE03D /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				E65B44B62CFA0835003FE03D /* PushSystem.swift */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
 		E697480E2B7A34FA00C47E94 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,9 +166,9 @@
 			isa = PBXGroup;
 			children = (
 				E69C82CA2B31B85D00586158 /* Package.swift */,
+				E69C828E2B25CDF300586158 /* ProjectApp.swift */,
 				E69C82BA2B25CE5A00586158 /* Sources */,
 				E69C82B92B25CE4000586158 /* Resources */,
-				E69C828E2B25CDF300586158 /* ProjectApp.swift */,
 				E69C82942B25CDF400586158 /* Preview Content */,
 			);
 			path = Project;
@@ -209,6 +219,7 @@
 		E69C82BA2B25CE5A00586158 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E65B44B52CFA082B003FE03D /* Push */,
 				E69B47412B5D288F00A8B7E6 /* Extensions */,
 				E69C82C72B305D7400586158 /* Network */,
 				E697480E2B7A34FA00C47E94 /* Coordinator */,
@@ -368,6 +379,7 @@
 				E69C82CD2B31BCD500586158 /* Server.swift in Sources */,
 				E69C828F2B25CDF300586158 /* ProjectApp.swift in Sources */,
 				E69B47402B57FD3300A8B7E6 /* SubReducer.swift in Sources */,
+				E65B44B72CFA0838003FE03D /* PushSystem.swift in Sources */,
 				E69B473E2B57FD1700A8B7E6 /* SubView.swift in Sources */,
 				E69748102B7A351400C47E94 /* Destination.swift in Sources */,
 				E69C82C92B305DE500586158 /* API.swift in Sources */,
